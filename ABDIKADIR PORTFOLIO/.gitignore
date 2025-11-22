@@ -34,3 +34,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Ignore parent directory files
+../GitHub/
+../fade.gif
+../index.html
+../property-management-system-new/
+../sarms-system/
+
