@@ -1,10 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const roboto = Roboto({ 
+  weight: ['300', '400', '500', '700', '900'],
+  subsets: ['latin'],
+  variable: '--font-roboto'
+})
 
 export const metadata: Metadata = {
   title: 'Abdikadir - Software Engineer | Full-Stack Developer | Portfolio',
@@ -31,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${roboto.variable} ${inter.className}`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

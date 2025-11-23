@@ -6,21 +6,82 @@ import { Award, ExternalLink, Calendar } from 'lucide-react'
 export default function Certifications() {
   // Add your certifications here
   const certifications = [
+    // 2025 Certifications
     {
-      name: 'Full-Stack Web Development',
-      issuer: 'Coursera / Udemy / FreeCodeCamp',
-      date: '2024',
-      credential: 'Certificate ID: XXXXX',
-      url: '#', // Add certificate URL if available
-    },
-    {
-      name: 'React & Next.js Mastery',
-      issuer: 'Online Platform',
-      date: '2024',
-      credential: 'Certificate ID: XXXXX',
+      name: 'Object Oriented Programming in Java',
+      issuer: 'Coursera',
+      date: '2022',
       url: '#',
     },
-    // Add more certifications as needed
+    {
+      name: 'IBM Java Developer',
+      issuer: 'IBM / Coursera',
+      date: '2025',
+      url: '#',
+    },
+    {
+      name: 'IBM Full-Stack JavaScript Developer',
+      issuer: 'IBM / Coursera',
+      date: '2025',
+      url: '#',
+    },
+    // 2024 Certifications
+    {
+      name: 'Meta Android Developer',
+      issuer: 'Meta',
+      date: '2024',
+      url: '#',
+    },
+    {
+      name: 'Microsoft Python Development',
+      issuer: 'Microsoft',
+      date: '2024',
+      url: '#',
+    },
+    {
+      name: 'Data Analysis with Python',
+      issuer: 'freeCodeCamp',
+      date: '2024',
+      url: '#',
+    },
+    {
+      name: 'Network Security',
+      issuer: 'Great Learning Academy',
+      date: '2022',
+      url: '#',
+    },
+    {
+      name: 'Ethical Hacking - Mobile Platforms and Network Architecture',
+      issuer: 'Great Learning Academy',
+      date: '2024',
+      url: '#',
+    },
+    // 2023 Certifications
+    {
+      name: 'Cyber Security: DevOps',
+      issuer: 'Macquarie University',
+      date: '2023',
+      url: '#',
+    },
+    {
+      name: 'Oracle PL/SQL Subprograms: Design, Apply & Optimize',
+      issuer: 'EDUCBA',
+      date: '2023',
+      url: '#',
+    },
+    {
+      name: 'Data Communication and Networking',
+      issuer: 'Cisco',
+      date: '2022',
+      url: '#',
+    },
+    // 2022 Certifications
+    {
+      name: 'Routing and Switching Essentials',
+      issuer: 'Cisco',
+      date: '2023',
+      url: '#',
+    },
   ]
 
   // If no certifications, show a placeholder message
@@ -46,7 +107,7 @@ export default function Certifications() {
         </p>
         
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
               <motion.div
                 key={index}
@@ -67,7 +128,7 @@ export default function Certifications() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center justify-between text-sm text-gray-600 mb-2">
+                <div className="flex items-center justify-between text-sm text-gray-600">
                   <div className="flex items-center">
                     <Calendar size={14} className="mr-1" />
                     <span>{cert.date}</span>
@@ -84,7 +145,6 @@ export default function Certifications() {
                     </a>
                   )}
                 </div>
-                <p className="text-xs text-gray-500">{cert.credential}</p>
               </motion.div>
             ))}
           </div>

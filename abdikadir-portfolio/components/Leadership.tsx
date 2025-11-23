@@ -6,12 +6,12 @@ import { Users, Trophy } from 'lucide-react'
 export default function Leadership() {
   const roles = [
     {
-      title: 'Vice President',
+      title: 'Treasurer',
       organization: 'KLUST Somalian Society',
       icon: Users,
     },
     {
-      title: 'Treasurer',
+      title: 'Vice President',
       organization: 'KLUST Cyber Club',
       icon: Trophy,
     },
